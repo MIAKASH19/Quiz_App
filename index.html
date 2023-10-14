@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz-App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="page1">
+            <div class="img">
+                <img src="undraw_questions_re_1fy7.svg" alt="">
+            </div>
+            <div class="text">
+                <h3>Quiz App with Fixed time</h3>
+                <p>This is a mini quiz web app. In this quiz app there are multiple questions. You can participet to check your knowledge in web technologies. To participet click on the below start button to progress quiz</p>
+                <br>
+            </div>
+            <div class="btn">
+                <button>Start Quiz</button>
+            </div>
+        </div>
+        <div class="page2">
+            <div class="title">Some Rules of This Quiz</div>
+            <div class="ruleslist">
+                <ol>
+                    <li>You will have only <span style="color: #007bff;">15 seconds</span> per each questions</li>
+                    <li>Once you select yout answer, can't be undone.</li>
+                    <li>You can't select any options once time goes off.</li>
+                    <li>You can't exit fron the Quiz while you're playing.</li>
+                    <li>You'll get points on the basis of your answers.</li>
+                </ol>
+            </div>
+            <div class="buttons">
+                <button id="btn2">Exit quiz</button>
+                <button id="btn3">Continue</button>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="questionheader">
+                <div class="questitle">Start Exam</div>
+                <div class="timeCount">
+                    <div class="timeleft">Timeleft</div>
+                    <div class="seconds">15</div>
+                </div>
+                <div class="timeline"></div>
+            </div>
+
+            <div class="section">
+                <div class="question"></div>
+                <div class="Quesoptions">
+
+                    <div class="options">
+                        <!-- <span>Hybrid Text Multiple Language</span>
+                        <i class="ri-close-line"></i> -->
+                    </div>
+                    <div class="options">
+                        <!-- <span>Hyper Text Markup Language</span>
+                        <i class="ri-check-line"></i> -->
+                    </div>
+                    <div class="options">
+                        <!-- <span>Hybrid Test Multiple Language</span>
+                        <i class="ri-close-line"></i> -->
+                    </div>
+                    <div class="options">
+                        <!-- <span>Hybrid Text Markup Language</span>
+                        <i class="ri-close-line"></i> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="totalques">
+                <p></p>
+                <button class="nxtbtn">Next</button>
+            </div>
+        </div>
+        <div class="resultpage">
+            <div class="resultimg">
+                <img src="undraw_winners_re_wr1l.svg">
+            </div>
+            <div class="complete">The quiz is finished</div>
+            <div class="scoretext">
+                <!-- <p>Carry on👍 You got <br> <span>0</span> Out of <span>5</span></p> -->
+            </div>
+            <div class="button">
+                <!-- <button class="restart">Replay</button> -->
+                <button class="quit">Quit</button>
+            </div>
+        </div>
+    </div>
+
+<!-- <div class="homepage">
+    <div class="hometext"><h1>Do you want to Participet in Quiz</h1>
+    </div>
+    <div class="homebtn">
+        <button class="yes">Yes</button>
+        <button class="no">NO</button>
+    </div>
+</div> -->
+
+
+    <script src="script.js"></script>
+    <script src="question.js"></script>
+</body>
+</html>

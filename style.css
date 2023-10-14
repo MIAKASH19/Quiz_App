@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+html, body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: ; */
+    height: 100%;
+    width: 100%;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    width: 50vh;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: rgba(128, 106, 106, 0.3) 0px 10px 30px;
+}
+.img img{
+    width: 100%;
+}
+.text{
+    margin: auto;
+    width: 90%;
+}
+.text h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.text p{
+    line-height: 20px;
+    font-weight: 300;
+    color: #807e7e;
+}
+#p2{
+    margin-top: -10px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btn button{
+    color: white;
+    background: rgb(52, 114, 248);
+    border: none;
+    padding: 1.3vw 2.4vw;
+    border-top-left-radius: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+.btn button:hover{
+    cursor: pointer;
+    background: rgb(179, 201, 250);
+}
+.page2{
+    /* background: red; */
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.title{
+    font-size: 25px;
+    padding: 2vw;
+    border-bottom: 1px solid #dadada;
+}
+.ruleslist{
+    width: 80%;
+    padding: 3vw 3vw ;
+}
+.ruleslist ol li{
+    line-height: 30px;
+    font-size: 15px;
+}
+.buttons button{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+#btn3{
+    color: white;
+    right: 0;
+    background: rgb(52, 114, 248);
+    border: none;
+    padding: 15px 25px;
+    border-top-left-radius: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+#btn3:hover{
+    cursor: pointer;
+    background: rgb(29, 250, 84);
+}
+#btn2:hover{
+    cursor: pointer;
+    background: rgb(253, 122, 62);
+}
+#btn2{
+    color: white;
+    left: 0;
+    background: rgb(52, 114, 248);
+    border: none;
+    padding: 15px 25px;
+    border-top-right-radius: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+.page3.activequiz{
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+}
+.page3{
+    height: 100%;
+    /* background: red; */
+    width: 100%;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+}
+.questionheader{
+    height: 6vw;
+    width: 100%;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.questitle{
+    /* margin-left: -2vw; */
+}
+.timeCount{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.timeleft{
+    /* background: red; */
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.seconds{
+    background: gray;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+.timeline{
+    position: absolute;
+    bottom: 38vw;
+    left: 0;
+    height: 3px;
+    /* width: 50%; */
+    /* z-index: 99; */
+    background: blue;
+}
+.section{
+    /* margin-top: 3vw; */
+    padding: 1.5vw;
+}
+.question{
+    font-size: 2.4vw;
+    /* margin-bottom: 10px; */
+}
+.Quesoptions{
+    /* background: red; */
+    margin-top: 3vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.options{
+    background: aliceblue;
+    height: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease-in 0.2s;
+    border: 1px solid #84c5fe;
+    cursor: pointer;
+}
+.options:hover{
+    background: #cce5ff;
+    color: #004085;
+    border: 1 px solid #b8daff;
+}
+.options span, i{
+    padding: 1vw;
+}
+.totalques{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 1px solid #dadada; */
+}
+.totalques p{
+    padding-left: 2vw;
+}
+.totalques button{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.3vw 3vw;
+    background: rgb(70, 194, 252);
+    border: none;
+    color: white;
+    border-top-left-radius: 30px;
+}
+.totalques button:hover{
+    background: lightsalmon;
+}
+.correct {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.disable{
+    pointer-events: none;
+}
+.resultpage.activequiz{
+    /* opacity: 1; */
+    display: block;
+    pointer-events: auto;
+}
+.resultpage{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.resultimg img{
+    width: 100%;
+    height: 35vh;
+    /* background: yellow; */
+    margin-bottom: 2vw;
+}
+.complete{
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+.scoretext{
+    margin: auto;
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.scoretext span{
+    color: blue;
+    font-size: 3vw;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vw;
+    gap: 3vw;
+}
+.button button{
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+/* .restart{
+    background: lightskyblue;
+} */
+.quit{
+    background: lightsalmon;
+}
+/* .restart:hover{
+    background: blue;
+} */
+.quit:hover{
+    background: orangered;
+}
